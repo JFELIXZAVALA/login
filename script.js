@@ -27,9 +27,7 @@ function validate(username, password)
     if (username === database[0].username && password === database[0].password)
     {
         alert("login succesfully"),
-        function validate() {
-            window.location.href="http://programminghead.com";  
-          }
+  
         
         
     }
