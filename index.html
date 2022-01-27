@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Login Form</title>
     <link rel="stylesheet" href="style.css" />
-    
   </head>
   <body>
-    <form class="box" method="POST" action="/cloudynight.jpg">
-      <h1>login</h1>
+    <form id="form" class="box" onsubmit="return auth()" action="" method="get">
+      <h1>Login</h1>
 
       <input type="text" name="" placeholder="Enter Username" id="username" />
       <input
@@ -19,9 +18,10 @@
         placeholder="Enter Password"
         id="password"
       />
-      <input type="submit" name="" value="Login" onclick="validate()"
-      /></a>
+
+      <div id="forgot-pass"><a href="forgot.html">Forgot Password?</a></div>
+      <input type="submit" name="" value="Login" />
     </form>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
