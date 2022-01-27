@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,100&display=swap");
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Fira Sans", sans-serif;
   background: url(cloudynight.jpg);
   background-size: cover;
 }
@@ -13,14 +15,31 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.4);
+  border-radius: 550px;
   text-align: center;
 }
 .box h1 {
   color: white;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid #0367fd;
+  padding: 14px 10px;
+  width: 220px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25px;
+}
+
+.box input[type="email"],
 .box input[type="password"] {
   border: 0;
   background: none;
@@ -39,7 +58,7 @@ body {
 .box input[type="text"]:focus,
 .box input[type="password"]:focus {
   width: 270px;
-  border-color: #ffc400ec;
+  border-color: #1ffc0f;
 }
 .box input[type="submit"] {
   border: 0;
@@ -47,7 +66,7 @@ body {
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 3px solid #ffc400ec;
+  border: 3px solid #1ffc0f;
   padding: 14px 35px;
   outline: none;
   color: white;
@@ -56,5 +75,20 @@ body {
   cursor: pointer;
 }
 .box input[type="submit"]:hover {
-  background: #ffc400ec;
+  background: #1ffc0f;
+  color: #1ffc0f;
+}
+
+.forgot-pass {
+  color: chartreuse;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fc1ca1;
+  text-decoration: none;
 }
