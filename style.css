@@ -6,6 +6,22 @@ body {
   font-family: "Fira Sans", sans-serif;
   background: url(cloudynight-min.jpg);
   background-size: cover;
+  background-repeat: repeat-y;
+}
+
+#key {
+  margin: 5%;
+  background-color: rgba(17, 17, 17, 0.6);
+  width: 100%;
+  max-width: 200px;
+  color: #ffffff;
+  text-align: center;
+  padding: 1%;
+  border-radius: 4%;
+}
+
+.left-align {
+  text-align: left;
 }
 .box {
   width: 300px;
